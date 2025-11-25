@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Explore Bharat Mata Ki Jai — Demo</title>
+  <style>
+    :root{--accent:#0f766e;--muted:#666;--bg:#f7f7f9}
+    *{box-sizing:border-box}body{font-family:Arial,Helvetica,sans-serif;margin:0;color:#222;background:var(--bg)}
+    .wrap{max-width:980px;margin:24px auto;padding:18px}
+    header{display:flex;justify-content:space-between;align-items:center;background:#fff;padding:12px 18px;border-radius:8px;box-shadow:0 1px 6px rgba(0,0,0,.05)}
+    .logo{font-weight:700;color:var(--accent)}
+    nav a{margin-left:14px;text-decoration:none;color:#333;font-weight:500}
+    .hero{display:flex;gap:18px;align-items:center;margin-top:18px;background:#fff;padding:20px;border-radius:8px}
+    .hero img{width:320px;height:180px;object-fit:cover;border-radius:6px}
+    .btn{display:inline-block;margin-top:12px;padding:8px 12px;background:var(--accent);color:#fff;border-radius:6px;text-decoration:none}
+    .cards{display:flex;gap:12px;margin-top:16px;flex-wrap:wrap}
+    .card{background:#fff;padding:12px;border-radius:8px;width:30%;min-width:220px;box-shadow:0 6px 16px rgba(0,0,0,.04)}
+    .card img{width:100%;height:120px;object-fit:cover;border-radius:6px}
+    footer{text-align:center;color:var(--muted);margin-top:18px}
+    @media(max-width:760px){.hero{flex-direction:column}.card{width:100%}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">Explore <span style="color:#222">Bharat</span></div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="home">
+      <div>
+        <h2>Discover India's best spots</h2>
+        <p>Chhote getaways ya long vacations — plan karo aur explore karoo.</p>
+        <a class="btn" href="#packages">Explore</a>
+      </div>
+      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1200&auto=format&fit=crop" alt="scenic">
+    </section>
+
+    <section id="packages" class="cards">
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1505765059641-5a7a6b8c0a54?q=80&w=800&auto=format&fit=crop" alt="mountain">
+        <h4>Himachal</h4>
+        <p>Snowy peaks & peaceful valleys.</p>
+      </article>
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop" alt="beach">
+        <h4>Goa</h4>
+        <p>Beaches, sun & nightlife.</p>
+      </article>
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?q=80&w=800&auto=format&fit=crop" alt="heritage">
+        <h4>Rajasthan</h4>
+        <p>Palaces, forts & royal culture.</p>
+      </article>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Explore Bharat — demo site</p>
+    </footer>
+  </div>
+</body>
+</html>
